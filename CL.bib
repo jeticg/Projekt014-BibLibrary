@@ -75,6 +75,25 @@
     pages = "740--750",
 }
 
+@inproceedings{CL2014008,
+    title = "Learning Phrase Representations using {RNN} Encoder{--}Decoder for Statistical Machine Translation",
+    author = {Cho, Kyunghyun  and
+      van Merri{\"e}nboer, Bart  and
+      Gulcehre, Caglar  and
+      Bahdanau, Dzmitry  and
+      Bougares, Fethi  and
+      Schwenk, Holger  and
+      Bengio, Yoshua},
+    booktitle = "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP})",
+    month = oct,
+    year = "2014",
+    address = "Doha, Qatar",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D14-1179",
+    doi = "10.3115/v1/D14-1179",
+    pages = "1724--1734",
+}
+
 @inproceedings{CL2015003,
     title = "Transition-Based Dependency Parsing with Stack Long Short-Term Memory",
     author = "Dyer, Chris  and
@@ -305,6 +324,21 @@
   location = 	"Austin, Texas",
   doi = 	"10.18653/v1/D16-1264",
   url = 	"http://aclweb.org/anthology/D16-1264"
+}
+
+@inproceedings{CL2016012,
+    title = "Does String-Based Neural {MT} Learn Source Syntax?",
+    author = "Shi, Xing  and
+      Padhi, Inkit  and
+      Knight, Kevin",
+    booktitle = "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2016",
+    address = "Austin, Texas",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D16-1159",
+    doi = "10.18653/v1/D16-1159",
+    pages = "1526--1534",
 }
 
 @InProceedings{CL2016016,
@@ -997,6 +1031,22 @@
   year={2017}
 }
 
+@inproceedings{CL2017347,
+    title = "Neural Machine Translation with Extended Context",
+    author = {Tiedemann, J{\"o}rg  and
+      Scherrer, Yves},
+    booktitle = "Proceedings of the Third Workshop on Discourse in Machine Translation",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W17-4811",
+    doi = "10.18653/v1/W17-4811",
+    pages = "82--92",
+    abstract = "We investigate the use of extended context in attention-based neural machine translation. We base our experiments on translated movie subtitles and discuss the effect of increasing the segments beyond single translation units. We study the use of extended source language context as well as bilingual context extensions. The models learn to distinguish between information from different segments and are surprisingly robust with respect to translation quality. In this pilot study, we observe interesting cross-sentential attention patterns that improve textual coherence in translation at least in some selected cases.",
+}
+
+
 @InProceedings{CL2018002,
   author = 	"G{\={u}}, Jetic
 		and Shavarani, Hassan S.
@@ -1073,6 +1123,24 @@
   pages = 	"2442--2452",
   location = 	"Brussels, Belgium",
   url = 	"http://aclweb.org/anthology/D18-1266"
+}
+
+@inproceedings{CL2018049,
+    title = "Operation-guided Neural Networks for High Fidelity Data-To-Text Generation",
+    author = "Nie, Feng  and
+      Wang, Jinpeng  and
+      Yao, Jin-Ge  and
+      Pan, Rong  and
+      Lin, Chin-Yew",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D18-1422",
+    doi = "10.18653/v1/D18-1422",
+    pages = "3879--3889",
+    abstract = "Recent neural models for data-to-text generation are mostly based on data-driven end-to-end training over encoder-decoder networks. Even though the generated texts are mostly fluent and informative, they often generate descriptions that are not consistent with the input structured data. This is a critical issue especially in domains that require inference or calculations over raw data. In this paper, we attempt to improve the fidelity of neural data-to-text generation by utilizing pre-executed symbolic operations. We propose a framework called Operation-guided Attention-based sequence-to-sequence network (OpAtt), with a specifically designed gating mechanism as well as a quantization module for operation results to utilize information from pre-executed operations. Experiments on two sports datasets show our proposed method clearly improves the fidelity of the generated texts to the input structured data.",
 }
 
 @Article{CL2018055,
@@ -1322,4 +1390,35 @@
     url = "https://www.aclweb.org/anthology/P19-1019",
     doi = "10.18653/v1/P19-1019",
     pages = "194--203",
+}
+
+@inproceedings{CL2019309,
+  title={Transformer-XL: Attentive Language Models beyond a Fixed-Length Context},
+  author={Dai, Zihang and Yang, Zhilin and Yang, Yiming and Carbonell, Jaime G and Le, Quoc and Salakhutdinov, Ruslan},
+  booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  pages={2978--2988},
+  year={2019}
+}
+
+@inproceedings{CL2020012,
+    title = "Encodings of Source Syntax: Similarities in {NMT} Representations Across Target Languages",
+    author = "Chang, Tyler A.  and
+      Rafferty, Anna",
+    booktitle = "Proceedings of the 5th Workshop on Representation Learning for NLP",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.repl4nlp-1.2",
+    doi = "10.18653/v1/2020.repl4nlp-1.2",
+    pages = "7--16",
+    abstract = "We train neural machine translation (NMT) models from English to six target languages, using NMT encoder representations to predict ancestor constituent labels of source language words. We find that NMT encoders learn similar source syntax regardless of NMT target language, relying on explicit morphosyntactic cues to extract syntactic features from source sentences. Furthermore, the NMT encoders outperform RNNs trained directly on several of the constituent label prediction tasks, suggesting that NMT encoder representations can be used effectively for natural language tasks involving syntax. However, both the NMT encoders and the directly-trained RNNs learn substantially different syntactic information from a probabilistic context-free grammar (PCFG) parser. Despite lower overall accuracy scores, the PCFG often performs well on sentences for which the RNN-based models perform poorly, suggesting that RNN architectures are constrained in the types of syntax they can learn.",
+}
+
+@inproceedings{CL2020013,
+  title={Do Transformers Need Deep Long-Range Memory?},
+  author={Rae, Jack and Razavi, Ali},
+  booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  pages={7524--7529},
+  year={2020}
 }
